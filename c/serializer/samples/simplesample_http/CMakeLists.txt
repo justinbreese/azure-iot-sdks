@@ -40,10 +40,5 @@ target_link_libraries(simplesample_http
 	iothub_client_http_transport 
 )
 
-if(WIN32)
-else()
-	target_link_libraries(simplesample_http pthread)
-endif()
-
 linkSharedUtil(simplesample_http)
 linkHttp(simplesample_http)

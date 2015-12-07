@@ -39,10 +39,5 @@ target_link_libraries(iothub_client_sample_mqtt
 	iothub_client_mqtt_transport
 )
 
-if(WIN32)
-else()
-	target_link_libraries(iothub_client_sample_mqtt pthread)
-endif()
-
 linkSharedUtil(iothub_client_sample_mqtt)
 linkPaho(iothub_client_sample_mqtt)
