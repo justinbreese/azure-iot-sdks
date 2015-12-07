@@ -40,10 +40,10 @@ target_link_libraries(iothub_client_sample_amqp
 	)
 	
 if(WIN32)
-	target_link_libraries(iothub_client_sample_amqp ${SHARED_UTIL_LIB_DIR}/Debug/aziotsharedutil.lib)
 else()
-	target_link_libraries(iothub_client_sample_amqp aziotsharedutil pthread)
+	target_link_libraries(iothub_client_sample_amqp pthread)
 endif()
 
+linkSharedUtil(iothub_client_sample_amqp)
 linkProton(iothub_client_sample_amqp)
 

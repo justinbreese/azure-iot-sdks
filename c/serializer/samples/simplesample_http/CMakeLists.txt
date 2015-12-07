@@ -41,9 +41,9 @@ target_link_libraries(simplesample_http
 )
 
 if(WIN32)
-	target_link_libraries(simplesample_http ${SHARED_UTIL_LIB_DIR}/Debug/aziotsharedutil.lib)
 else()
-	target_link_libraries(simplesample_http aziotsharedutil pthread)
+	target_link_libraries(simplesample_http pthread)
 endif()
 
+linkSharedUtil(simplesample_http)
 linkHttp(simplesample_http)

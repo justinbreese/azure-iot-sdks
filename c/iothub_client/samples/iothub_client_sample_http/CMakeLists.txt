@@ -41,9 +41,9 @@ target_link_libraries(iothub_client_sample_http
 )
 
 if(WIN32)
-	target_link_libraries(iothub_client_sample_http ${SHARED_UTIL_LIB_DIR}/Debug/aziotsharedutil.lib)
 else()
-	target_link_libraries(iothub_client_sample_http aziotsharedutil pthread)
+	target_link_libraries(iothub_client_sample_http pthread)
 endif()
-	
+
+linkSharedUtil(iothub_client_sample_http)
 linkHttp(iothub_client_sample_http)
