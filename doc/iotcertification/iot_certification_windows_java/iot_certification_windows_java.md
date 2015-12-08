@@ -113,9 +113,9 @@ This section walks you through building, deploying and validating the IoT Client
         
 1.  For downloads and installation instructions go here: <http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html>
        
-2.  Please make sure that the `PATH` environment variable includes the full path to the jdk1.8.x\bin directory. (Example: c:\Program Files\Java\jdk1.8.0_65)
+2.  Please make sure that the `PATH` environment variable includes the full path to the jdk1.8.x\bin directory. (Example: c:\Program Files\Java\jdk1.8.0_65). Append the bin path to the existing 'PATH' variable by going to 'Advanced System Settings' -> 'Environmental Variables'.
         
-3.  Please make sure that the `JAVA_HOME` environment variable includes the full path to the jdk1.8.x directory. (Example: JAVA_HOME=c:\Program Files\Java\jdk1.8.0_65)
+3.  Please make sure that the `JAVA_HOME` environment variable includes the full path to the jdk1.8.x directory. (Example: JAVA_HOME=c:\Program Files\Java\jdk1.8.0_65). Set the 'JAVA_HOME' variable if it does not exist by going to 'Advanced System Settings' -> 'Environmental Variables'
 
 4.  You can test whether your PATH variable is set correctly by restarting your console and running `java -version`.
 
@@ -123,9 +123,9 @@ This section walks you through building, deploying and validating the IoT Client
 ### 3.1.2  Install Maven and set up environment variables
 Using Maven 3 is the recommended way to install Azure IoT device SDK for Java.
 
-1.  For downloads and installation instructions for maven 3 go here: <https://maven.apache.org/download.cgi>
+1.  For downloads and installation instructions for maven 3 go here and choose one of the binary acrchives: <https://maven.apache.org/download.cgi>
 
-2.  Please make sure that the PATH environment variable includes the full path to the apache-maven-3.x.x\bin directory. (Example: F:\Setups\apache-maven-3.3.3\bin). The apache-maven-3.x.x directory is where Maven 3 is installed.
+2.  Please make sure that the PATH environment variable includes the full path to the apache-maven-3.x.x\bin directory. (Example: F:\Setups\apache-maven-3.3.3\bin). The apache-maven-3.x.x directory is where Maven 3 is installed. Append the bin path to the existing 'PATH' variable by going to 'Advanced System Settings' -> 'Environmental Variables'.
 
 2.  You can verify that the environment variables necessary to run Maven 3 have been set correctly by restarting your console and running `mvn --version.`
   
